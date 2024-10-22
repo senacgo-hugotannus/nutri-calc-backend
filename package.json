@@ -1,11 +1,16 @@
 {
   "dependencies": {
-    "express": "^4.21.1"
+    "@supabase/supabase-js": "^2.45.6",
+    "cors": "^2.8.5",
+    "express": "^4.21.1",
+    "pg": "^8.13.0",
+    "supabase": "^1.204.3"
   },
   "name": "express",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -18,5 +23,8 @@
     "url": "https://github.com/senacgo-hugotannus/nutri-calc-backend/issues"
   },
   "homepage": "https://github.com/senacgo-hugotannus/nutri-calc-backend#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
