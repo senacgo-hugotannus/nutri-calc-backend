@@ -20,7 +20,16 @@ app.get('/api/data', async (req, res) => {
     if (error) return res.status(500).json(error);
     res.json(data);
 });
+app.post('/api/create', async (req, res) => {
+    const { body } = req;
 
+    const { data, error } = await supabase
+        .from('registros')
+        .insert([body]);
+
+    if (error) return res.status(500).json(error);
+    res.status(201).json(data);
+});
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
