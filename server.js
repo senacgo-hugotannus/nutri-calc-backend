@@ -14,7 +14,7 @@ const supabase = createClient(supabaseUrl, supabaseKey);
 
 app.get('/api/data', async (req, res) => {
     const { data, error } = await supabase
-        .from('your_table')
+        .from('registros')
         .select('*');
 
     if (error) return res.status(500).json(error);

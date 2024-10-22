@@ -11,6 +11,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "start": "nodemon server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,5 +24,8 @@
     "url": "https://github.com/senacgo-hugotannus/nutri-calc-backend/issues"
   },
   "homepage": "https://github.com/senacgo-hugotannus/nutri-calc-backend#readme",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "nodemon": "^3.1.7"
+  }
 }
