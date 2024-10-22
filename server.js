@@ -20,7 +20,6 @@ app.get('/api/data', async (req, res) => {
     if (error) return res.status(500).json(error);
     res.json(data);
 });
-
 app.post('/api/data', async (req, res) => {
     const { body } = req;
 
@@ -31,7 +30,6 @@ app.post('/api/data', async (req, res) => {
     if (error) return res.status(500).json(error);
     res.status(201).json(data);
 });
-
 app.listen(PORT, () => {
     console.log(`Server is running on http://localhost:${PORT}`);
 });
